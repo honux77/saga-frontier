@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title>공략</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="title.js"></script>
+  </head>
+  <body>
+    <!-- 상단 -->
+    <div class="header"> <a href="../Main_Page.html">
+        <h1>사가 프론티어</h1>
+      </a>
+      <h2>동료 캐릭터 일람</h2>
+    </div>
+    <!-- 본문 -->
+    <div class="viewer"> 전투에 참가할 수 있는 동료 캐릭터의 일람<br>
+      <ul>
+        <li> ◎ : 해당 시나리오의 주인공 캐릭터</li>
+        <li> O : 해당 시나리오에서 동료가 되는 캐릭터 (일시적인 것도 포함)</li>
+        <li> - : 동료 불가능 캐릭터</li>
+      </ul>
+      <br>
+      <table class="sortable">
+        <thead>
+          <tr class="evenRow">
+            <th index="0" align="center">이름(K)<span class="hidden"></span></th>
+            <th index="1" align="center">이름(J)<span class="hidden"></span></th>
+            <th index="2" align="center">종족<span class="hidden"></span></th>
+            <th index="3" align="center">성별<span class="hidden"></span></th>
+            <th index="4" align="center">블루편<span class="hidden"></span></th>
+            <th index="5" align="center">쿤편<span class="hidden"></span></th>
+            <th index="6" align="center">T260G편<span class="hidden"></span></th>
+            <th index="7" align="center">레드편<span class="hidden"></span></th>
+            <th index="8" align="center">에밀리아<span class="hidden"></span></th>
+            <th index="9" align="center">아세루스편<span class="hidden"></span></th>
+            <th index="10" align="center">류트편<span class="hidden"></span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="oddRow">
+            <td>블루</td>
+            <td>ブルー</td>
+            <td>휴먼</td>
+            <td>남</td>
+            <td align="center">◎</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+          </tr>
+          <tr class="evenRow">
+            <td>쿤</td>
+            <td>クーン</td>
+            <td>몬스터</td>
+            <td>무</td>
+            <td align="center">O</td>
+            <td align="center">◎</td>
+            <td align="center">O</td>
+            <td align="center">-</td>
+            <td align="center">O</td>
+            <td align="center">-</td>
+            <td align="center">O</td>
+          </tr>
+          <tr class="oddRow">
+            <td>T260</td>
+            <td>T260</td>
+            <td>타입1</td>
+            <td>무</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">◎</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">O</td>
+          </tr>
+          <tr class="evenRow">
+            <td>레드</td>
+            <td>レッド</td>
+            <td>휴먼</td>
+            <td>남</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">◎</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+          </tr>
+          <tr class="oddRow">
+            <td>에밀리아</td>
+            <td>エミリア</td>
+            <td>휴먼</td>
+            <td>여</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">◎</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+          </tr>
+          <tr class="evenRow">
+            <td>아세루스</td>
+            <td>アセルス</td>
+            <td>반요</td>
+            <td>여</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">◎</td>
+            <td align="center">-</td>
+          </tr>
+          <tr class="oddRow">
+            <td>류트</td>
+            <td>リュート</td>
+            <td>휴먼</td>
+            <td>남</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">◎</td>
+          </tr>
+          <tr class="evenRow">
+            <td>애니</td>
+            <td>アニー</td>
+            <td>휴먼</td>
+            <td>여</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+          </tr>
+          <tr class="oddRow">
+            <td>함장</td>
+            <td>艦長</td>
+            <td>휴먼</td>
+            <td>여</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">O</td>
+          </tr>
+          <tr class="evenRow">
+            <td>겐</td>
+            <td>ゲン</td>
+            <td>휴먼</td>
+            <td>남</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+          </tr>
+          <tr class="oddRow">
+            <td>돌</td>
+            <td>ドール</td>
+            <td>휴먼</td>
+            <td>여</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">O</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+          </tr>
+          <tr class="evenRow">
+            <td>휴즈</td>
+            <td>ヒューズ</td>
+            <td>휴먼</td>
+            <td>남</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+          </tr>
+          <tr class="oddRow">
+            <td>페이온</td>
+            <td>フェイオン</td>
+            <td>휴먼</td>
+            <td>남</td>
+            <td align="center">-</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+          </tr>
+          <tr class="evenRow">
+            <td>메이렌</td>
+            <td>メイレン</td>
+            <td>휴먼</td>
+            <td>여</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">-</td>
+            <td align="center">O</td>
+            <td align="center">-</td>
+            <td align="center">O</td>
+          </tr>
+          <tr class="oddRow">
+            <td>라이자</td>
+            <td>ライザ</td>
+            <td>휴먼</td>
+            <td>여</td>
+            <td align="center">O</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+          </tr>
+          <tr class="evenRow">
+            <td>루쥬</td>
+            <td>ルージュ</td>
+            <td>휴먼</td>
+            <td>남</td>
+            <td align="center">◎</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+          </tr>
+          <tr class="oddRow">
+            <td>루퍼스</td>
+            <td>ルーファス</td>
+            <td>휴먼</td>
+            <td>남</td>
+            <td align="center">O</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">-</td>
+            <td align="center">O</td>
+          </tr>
+          <tr class="evenRow">
+            <td>이루둔</td>
+            <td>イルドゥン</td>
+            <td>요마</td>
+            <td>남</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">O</td>
+            <td align="center">-</td>
+          </tr>
+          <tr class="oddRow">
+            <td>사일런스</td>
+            <td>サイレンス</td>
+            <td>요마</td>
+            <td>남</td>
+            <td align="center">O</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+          </tr>
+          <tr class="evenRow">
+            <td>백장미</td>
+            <td>白薔薇</td>
+            <td>요마</td>
+            <td>여</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">-</td>
+          </tr>
+          <tr class="oddRow">
+            <td>조즈마</td>
+            <td>ゾズマ</td>
+            <td>요마</td>
+            <td>남</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">-</td>
+          </tr>
+          <tr class="evenRow">
+            <td>시간의 군주</td>
+            <td>時の君</td>
+            <td>요마</td>
+            <td>남</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+          </tr>
+          <tr class="oddRow">
+            <td>누사칸</td>
+            <td>ヌサカーン</td>
+            <td>요마</td>
+            <td>남</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+          </tr>
+          <tr class="evenRow">
+            <td>메사루팀</td>
+            <td>メサルティム</td>
+            <td>요마</td>
+            <td>여</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">-</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+          </tr>
+          <tr class="oddRow">
+            <td>레이</td>
+            <td>零</td>
+            <td>요마</td>
+            <td>여</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">O</td>
+            <td align="center">-</td>
+          </tr>
+          <tr class="evenRow">
+            <td>아카카브</td>
+            <td>赤カブ</td>
+            <td>몬스터</td>
+            <td>무</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">O</td>
+            <td align="center">-</td>
+          </tr>
+          <tr class="oddRow">
+            <td>기린</td>
+            <td>麒麟</td>
+            <td>몬스터</td>
+            <td>무</td>
+            <td align="center">-</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+          </tr>
+          <tr class="evenRow">
+            <td>코튼</td>
+            <td>コットン</td>
+            <td>몬스터</td>
+            <td>무</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+          </tr>
+          <tr class="oddRow">
+            <td>썬더</td>
+            <td>サンダー</td>
+            <td>몬스터</td>
+            <td>무</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+          </tr>
+          <tr class="evenRow">
+            <td>주작</td>
+            <td>朱雀</td>
+            <td>몬스터</td>
+            <td>무</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+          </tr>
+          <tr class="oddRow">
+            <td>슬라임</td>
+            <td>スライム</td>
+            <td>몬스터</td>
+            <td>무</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+          </tr>
+          <tr class="evenRow">
+            <td>제왕</td>
+            <td>済王</td>
+            <td>몬스터</td>
+            <td>남</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+          </tr>
+          <tr class="oddRow">
+            <td>특수 공작차</td>
+            <td>特殊工作車</td>
+            <td>타입6</td>
+            <td>무</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">O</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">O</td>
+          </tr>
+          <tr class="evenRow">
+            <td>나카지마 영식</td>
+            <td>ナカジマ零式</td>
+            <td>타입3</td>
+            <td>무</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">O</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+          </tr>
+          <tr class="oddRow">
+            <td>BJ&amp;K</td>
+            <td>BJ&amp;K</td>
+            <td>타입4</td>
+            <td>무</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">O</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+          </tr>
+          <tr class="evenRow">
+            <td>pzkw V</td>
+            <td>pzkw V</td>
+            <td>타입5</td>
+            <td>무</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">O</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+          </tr>
+          <tr class="oddRow">
+            <td>래빗</td>
+            <td>ラビット</td>
+            <td>타입2</td>
+            <td>무</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">O</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+          </tr>
+          <tr class="evenRow">
+            <td>레오날드</td>
+            <td>レオナルド</td>
+            <td>타입6</td>
+            <td>무</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">O</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+    </div>
+    <!-- 하단 -->
+    <div class="footer">
+      <p>이 문서는 비영리 목적인 경우만 자유롭게 이용, 복사, 수정 및 재배포할 수 있습니다.</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title>공략</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="title.js"></script>
+  </head>
+  <body>
+    <!-- 상단 -->
+    <div class="header"> <a href="../Main_Page.html">
+        <h1>사가 프론티어</h1>
+      </a>
+      <h2>게임 시스템</h2>
+    </div>
+    <!-- 본문 -->
+    <div class="viewer">
+      <ol id="mozToc">
+        <!--mozToc h3 1 h4 2-->
+        <li><a href="#mozTocId67340">인터페이스</a>
+          <ol>
+            <li><a href="#mozTocId309511">조작</a></li>
+            <li><a href="#mozTocId375674">메뉴 화면</a></li>
+          </ol>
+        </li>
+        <li><a href="#mozTocId473365">주인공 선택 시스템</a></li>
+        <li><a href="#mozTocId538332">세이브 시스템</a></li>
+        <li><a href="#mozTocId115440">리전</a></li>
+        <li><a href="#mozTocId607938">전투 시스템</a>
+          <ol>
+            <li><a href="#mozTocId583086">파티 편성</a></li>
+            <li><a href="#mozTocId991046">연계</a></li>
+            <li><a href="#mozTocId16555">에너미 랭크 시스템</a></li>
+          </ol>
+        </li>
+        <li><a href="#mozTocId529571">스테이터스</a>
+          <ol>
+            <li><a href="#mozTocId821124">중량</a></li>
+          </ol>
+        </li>
+        <li><a href="#mozTocId99945">장비품</a>
+          <ol>
+            <li><a href="#mozTocId580979">무기</a></li>
+            <li><a href="#mozTocId952723">방어구</a></li>
+          </ol>
+        </li>
+        <li><a href="#mozTocId505342">방어 특성</a>
+          <ol>
+            <li><a href="#mozTocId447503">속성 방어</a></li>
+            <li><a href="#mozTocId90364">특수 내성</a></li>
+          </ol>
+        </li>
+        <li><a href="#mozTocId280680">스킬</a>
+          <ol>
+            <li><a href="#mozTocId413305">기술</a></li>
+            <li><a href="#mozTocId722626">술법</a></li>
+            <li><a href="#mozTocId259593">간파</a></li>
+            <li><a href="#mozTocId945257">번뜩임</a></li>
+          </ol>
+        </li>
+        <li><a href="#mozTocId357775">종족</a>
+          <ol>
+            <li><a href="#mozTocId852736">휴먼족</a></li>
+            <li><a href="#mozTocId179524">요마족</a></li>
+            <li><a href="#mozTocId252411">몬스터족</a></li>
+            <li><a href="#mozTocId697242">메카족</a></li>
+          </ol>
+        </li>
+      </ol>
+      <br>
+      <h3><a class="mozTocH3" id="mozTocId67340"></a>인터페이스</h3>
+      <h4><a class="mozTocH4" id="mozTocId309511"></a>조작</h4>
+      <table class="twtable">
+        <tbody>
+          <tr class="evenRow">
+            <th align="center">버튼</th>
+            <th align="center">설명</th>
+          </tr>
+          <tr class="oddRow">
+            <td>십자키</td>
+            <td>캐릭터나 커서를 이동</td>
+          </tr>
+          <tr class="evenRow">
+            <td>○</td>
+            <td>결정/대화</td>
+          </tr>
+          <tr class="oddRow">
+            <td>□</td>
+            <td>메뉴 화면</td>
+          </tr>
+          <tr class="evenRow">
+            <td>△</td>
+            <td>전투 개시 : 선택 캐릭터의 위치를 변경<br>
+              전투 중 : 상태 보기</td>
+          </tr>
+          <tr class="oddRow">
+            <td>X</td>
+            <td>취소/달리기</td>
+          </tr>
+          <tr class="evenRow">
+            <td>L1</td>
+            <td>메뉴 화면 : 화면 전환<br>
+              전투 : 커맨드 선택</td>
+          </tr>
+          <tr class="oddRow">
+            <td>R1</td>
+            <td>메뉴 화면 : 화면 전환<br>
+              전투 : 방어 (데미지 1/2 경감)</td>
+          </tr>
+          <tr class="evenRow">
+            <td>L2/R2</td>
+            <td>전투 : 카메라 회전</td>
+          </tr>
+          <tr class="oddRow">
+            <td>셀렉트</td>
+            <td>아이템 화면 : 누르고 있으면 아이템 종류별로 정렬한다.</td>
+          </tr>
+          <tr class="evenRow">
+            <td>스타트</td>
+            <td>모험 화면 : 일시 정지<br>
+              전투 : 전투 속도를 설정할 수 있다. 통상(通常), 느림(遅い), 매우 느림(極遅)</td>
+          </tr>
+          <tr class="oddRow">
+            <td>R2+△</td>
+            <td>퀵 세이브</td>
+          </tr>
+          <tr class="evenRow">
+            <td>L1+R1+셀렉트+스타트</td>
+            <td>소프트 리셋</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <h4><a class="mozTocH4" id="mozTocId375674"></a>메뉴 화면</h4>
+      <table class="twtable">
+        <tbody>
+          <tr class="evenRow">
+            <th align="center">명칭(K)</th>
+            <th align="center">명칭(J)</th>
+            <th align="center">설명</th>
+          </tr>
+          <tr class="oddRow">
+            <td>스테이터스</td>
+            <td>ステータス</td>
+            <td>캐릭터의 능력치와 장비를 본다</td>
+          </tr>
+          <tr class="evenRow">
+            <td>아이템</td>
+            <td>アイテム</td>
+            <td>소지하고 있는 아이템을 본다</td>
+          </tr>
+          <tr class="oddRow">
+            <td>기술연계</td>
+            <td>技術連携</td>
+            <td>발동시킨 연계의 목록을 본다 (3개까지 연계를 보존할 수 있다)</td>
+          </tr>
+          <tr class="evenRow">
+            <td>교체</td>
+            <td>入れ換え</td>
+            <td>멤버를 교체한다</td>
+          </tr>
+          <tr class="oddRow">
+            <td>장비무기</td>
+            <td>裝備武器</td>
+            <td>아이템을 장비시킨다</td>
+          </tr>
+          <tr class="evenRow">
+            <td>장비기술</td>
+            <td>裝備技術</td>
+            <td>기술/술법을 장비시킨다</td>
+          </tr>
+          <tr class="oddRow">
+            <td>컨피그</td>
+            <td>コンフィグ</td>
+            <td>조작 방법에 대한 설명을 읽을 수 있다.<br>
+              각종 설정을 할 수 있다.</td>
+          </tr>
+          <tr class="evenRow">
+            <td>세이브</td>
+            <td>セーブ</td>
+            <td>데이터를 기록한다</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <h3><a class="mozTocH3" id="mozTocId473365"></a>주인공 선택 시스템</h3>
+      <ul>
+        <li> 7명의 주인공 중에 1명을 선택하는 시스템을 채용</li>
+        <li> 주인공마다 시나리오가 전혀 다르다.</li>
+        <li> 주인공에 따라서는 행동에 의해 멀티 엔딩으로 분기한다.</li>
+      </ul>
+      <br>
+      <strong>주인공별 특징</strong>
+      <table class="twtable">
+        <tbody>
+          <tr class="evenRow">
+            <th align="center">주인공</th>
+            <th align="center">시나리오<br>
+              난이도</th>
+            <th align="center">주인공의 강함</th>
+            <th align="center">최종 보스의 강함</th>
+            <th align="center">특징</th>
+            <th align="center">플레이 타임(h)</th>
+          </tr>
+          <tr class="oddRow">
+            <td>블루</td>
+            <td>1</td>
+            <td>4</td>
+            <td>5</td>
+            <td>주인공이 강하다(종반)<br>
+              술법을 다루기 쉽다<br>
+              엔딩이 없다<br>
+              동료 캐릭터가 많다</td>
+            <td>15</td>
+          </tr>
+          <tr class="evenRow">
+            <td>쿤</td>
+            <td>3</td>
+            <td>2</td>
+            <td>4</td>
+            <td>주인공이 약하다<br>
+              각종 반지를 사용 가능<br>
+              일부 이벤트가 어렵다</td>
+            <td>12</td>
+          </tr>
+          <tr class="oddRow">
+            <td>T260G</td>
+            <td>3</td>
+            <td>4</td>
+            <td>3</td>
+            <td>주인공이 강하다<br>
+              메카계 동료가 많다<br>
+              요마를 동료로 할 수 없다</td>
+            <td>6</td>
+          </tr>
+          <tr class="evenRow">
+            <td>레드</td>
+            <td>4</td>
+            <td>5</td>
+            <td>1</td>
+            <td>히어로로 변신 가능<br>
+              중반이 약간 어렵다<br>
+              동료 캐릭터가 많다</td>
+            <td>8</td>
+          </tr>
+          <tr class="oddRow">
+            <td>에밀리아</td>
+            <td>2</td>
+            <td>3</td>
+            <td>3</td>
+            <td>코스튬 체인지 가능<br>
+              메카계 동료가 없다</td>
+            <td>3</td>
+          </tr>
+          <tr class="evenRow">
+            <td>류트</td>
+            <td>1</td>
+            <td>3</td>
+            <td>4</td>
+            <td>최종 보스 이외의 이벤트가 없다<br>
+              동료 캐릭터가 많다</td>
+            <td>4</td>
+          </tr>
+          <tr class="oddRow">
+            <td>아세루스</td>
+            <td>5</td>
+            <td>4</td>
+            <td>3</td>
+            <td>요마화 가능<br>
+              중반이 약간 어렵다<br>
+              메카계 동료가 없다</td>
+            <td>11</td>
+          </tr>
+        </tbody>
+      </table>
+      ※ 플레이 타임은 글쓴이의 게임 클리어 타임을 기재한 것입니다. 타임 어택 같은 짓은 하지 않았으니 참고용으로 보세요. (표의 주인공 순서대로 클리어 했음)<br>
+      <br>
+      <h3><a class="mozTocH3" id="mozTocId538332"></a>세이브 시스템</h3>
+      <ul>
+        <li> 세이브 데이터 : 메모리 카드에 세이브를 한다. (2블록 사용)</li>
+        <li> 퀵 세이브 : 일시적으로 보존하는 세이브 데이터 (메모리 카드와는 별도). 게임 도중 R2+△ 버튼을 누르면 퀵 세이브를 할 수 있다.</li>
+        <li> 시스템 데이터 : 아래의 하위 항목을 참고</li>
+      </ul>
+      <br>
+      <strong>시스템 데이터</strong>
+      <ul>
+        <li> 게임 개시 직후에 임의로 작성하는 세이브 데이터. (1블록 사용)</li>
+        <li> New Game으로 게임을 처음 시작할 때 플레이어의 이름/별자리/혈액형을 입력하면 세이브 데이터가 생성된다.</li>
+        <li> 플레이어의 이력(각 주인공으로 플레이/클리어)에 따라 시스템 데이터가 갱신된다.</li>
+        <li> New Game을 선택하여 시작할 때 시스템 데이터를 불러오면, 시스템 데이터의 이력이 게임 초기 설정에 반영된다.</li>
+        <li> 모든 주인공의 클리어 횟수가 1회 이상이 되면 특전이 출현한다.</li>
+      </ul>
+      <br>
+      <h3><a class="mozTocH3" id="mozTocId115440"></a>리전</h3>
+      リージョン, region<br>
+      <br>
+      사가 프론티어는 리전(リージョン)이라고 하는 여러가지 세계와 종족이 함께 존재하는 세계관을 가지고 있다. 각 리전은 리전쉽(リージョンシップ)이라는 특수한 배를 타고 리전간 왕래를 하고 있다.<br>
+      <br>
+      리전쉽의 항행로는 다음과 같다.<br>
+      <ul>
+        <li> 그룹 A - 맨하탄/슈라이크/루미나스/매직 킹덤/경/요크랜드/두반</li>
+        <li> 그룹 B - IRPO/무스펠니블/스크랩/오우미/바카라/신로우/와카츠</li>
+        <li> 기타 - 크론/넬슨(오우미에서 리전쉽으로 이동 가능) 외 다수</li>
+      </ul>
+      <br>
+      각 그룹간의 왕래는 자유롭고, 다른 그룹으로 가려면 크론(クーロン)으로 가서 리전쉽을 타야한다. 기타 그룹의 리전은 특정 그룹이나 리전과의 왕래만 가능하다.<br>
+      <br>
+      <h3><a class="mozTocH3" id="mozTocId607938"></a>전투 시스템</h3>
+      <ul>
+        <li> 적과의 인카운트는 심볼에 접촉하면 전투가 발생하는 <strong>심볼 인카운트</strong> 방식. 적의 종족과 성별에 따라서 심볼 모양이 다르다.
+          <ul>
+            <li> 심볼에 대응한 종족의 적이 <strong>리더 몬스터</strong>로 출현한다.</li>
+          </ul>
+        </li>
+        <li> 전투는 턴제 커맨드 입력 방식이다.</li>
+        <li> 1회 전투에서 적/아군 각각 최대 5명씩 파티 배틀</li>
+        <li> 아군 캐릭터의 능력 변화(성장) 시스템은 캐릭터의 종족마다 다르다.</li>
+      </ul>
+      <br>
+      <h4><a class="mozTocH4" id="mozTocId583086"></a>파티 편성</h4>
+      <ul>
+        <li> 파티 멤버는 최대 15명까지, 최대 5명까지 구성된 3개의 그룹으로 편성된다.</li>
+        <li> 전투를 시작할 때, 편성된 그룹을 선택할 수 있다. 다만, 보스전에서는 강제적으로 왼쪽에서 첫 번째 그룹이 싸우게 된다.</li>
+        <li> 파티가 15명일 때도 새롭게 동료가 참가하는 일은 가능하지만, 16명 이후의 동료는 메뉴 화면에서 표시되지 않고, 시나리오에만 출현하는 동료 캐릭터가 된다.</li>
+      </ul>
+      <br>
+      <h4><a class="mozTocH4" id="mozTocId991046"></a>연계</h4>
+      連携<br>
+      <br>
+      <ul>
+        <li> 연계는 복수의 캐릭터(2명~5명)로 동일 대상에게 연속 공격을 하면 사용할 수 있다.
+          <ul>
+            <li> 연계할 캐릭터의 행동 순서를 맞춰야 함</li>
+          </ul>
+        </li>
+        <li> 연계 시, 개별적으로 공격했을 때보다 높은 데미지를 줄 수 있다.
+          <ul>
+            <li> 연계의 특수 효과 : 대상의 방어력/내성 무시, 추가 효과의 발동율 상승</li>
+          </ul>
+        </li>
+        <li> 적도 연계를 사용할 수 있다. (후기 사가 시리즈와 다르게 적아군의 연계가 겹치지 않는다)</li>
+      </ul>
+      <br>
+      <h4><a class="mozTocH4" id="mozTocId16555"></a>에너미 랭크 시스템</h4>
+      플레이어의 전투 회수에 따라 적이 강해진다. 예외인 경우도 있지만 대부분 에너미 랭크를 따른다.<br>
+      <ul>
+        <li> 심볼 인카운트 전투 시, <strong>"지금까지의 전투 회수"</strong>에 따라서 1~9랭크의 적이 출현한다. (많을수록 고랭크의 적이 출현)
+          <ul>
+            <li> 장소에 따라서 랭크가 변동하는 장소도 있다.</li>
+          </ul>
+        </li>
+        <li> 이벤트 전투나 보스 몬스터의 HP는 랭크에 따라서 따라서 최대 5배까지 증가한다. (기본 HP의 2배 ~ 5배)</li>
+        <li> 클리어 데이터를 이어서 다음 회차를 플레이할 경우. 시스템 데이터에 기록된 에너미 랭크가 인계된다. (초기값보다 약한 높게 시작됨)</li>
+      </ul>
+      <br>
+      <blockquote> 자세한 정보를 알고 싶으면 아래의 링크를 참고하세요.<br>
+        <a target="_blank" title="http://www.uri.sakura.ne.jp/~saga/sf1/neta/m_rank/m_rank1.html을(를) 여는 외부 링크"
+          href="http://www.uri.sakura.ne.jp/%7Esaga/sf1/neta/m_rank/m_rank1.html"
+          class="externalLink">http://www.uri.sakura.ne.jp/~saga/sf1/neta/m_rank/m_rank1.html</a></blockquote>
+      <br>
+      <h3><a class="mozTocH3" id="mozTocId529571"></a>스테이터스</h3>
+      <table class="twtable">
+        <tbody>
+          <tr class="evenRow">
+            <th align="center">명칭(K)</th>
+            <th align="center">설명</th>
+          </tr>
+          <tr class="oddRow">
+            <td>성별 (性別)</td>
+            <td>남성(男性), 여성(女性), 무성(無性)이 있다.<br>
+              특정 공격에 영향이 있다.</td>
+          </tr>
+          <tr class="evenRow">
+            <td>종족 (種族)</td>
+            <td>전투에서 사용할 수 있는 기술의 계통이나, 성장 시스템에 영향을 준다.</td>
+          </tr>
+          <tr class="oddRow">
+            <td>HP<br>
+              내구력 (耐久力)</td>
+            <td>데미지를 받으면 감소, 아이템이나 술법으로 회복 가능.<br>
+              0이 되면 전투 불능이 되며 동시에 LP가 1감소한다.<br>
+              전투 종료 후에는 전부 회복한다</td>
+          </tr>
+          <tr class="evenRow">
+            <td>LP<br>
+              생명력 (生命力)</td>
+            <td>전투 불능이 될 때 1씩 감소한다. 전투 불능 상태에서 적의 공격을 받으면 더욱 감소<br>
+              특정 기술이나 술법을 사용하는 것으로 자신의 LP가 감소하는 경우도 있다.<br>
+              0이 되면 빈사 상태가 되며, 회복시킬 때까지는 전투에 참가할 수 없다. (주인공의 경우 게임 오버)<br>
+              아이템이나 여관에서 LP를 회복할 수 있다.</td>
+          </tr>
+          <tr class="oddRow">
+            <td>WP<br>
+              기술력</td>
+            <td>기술(技)을 사용하기 위한 포인트.<br>
+              이동 중 회복 아이템이나 전투에 참가시키지 않았던 팀에 있으면 회복할 수 있다.</td>
+          </tr>
+          <tr class="evenRow">
+            <td>JP<br>
+              술력</td>
+            <td>술법(術)을 사용하기 위한 포인트.<br>
+              이동 중 회복 아이템이나 전투에 참가시키지 않았던 팀에 있으면 회복할 수 있다.</td>
+          </tr>
+          <tr class="oddRow">
+            <td>STR<br>
+              근력 (筋力)</td>
+            <td>높으면 검이나 체술을 사용할 때 물리 공격력이 높아진다.</td>
+          </tr>
+          <tr class="evenRow">
+            <td>QUI<br>
+              운동성 (運動性)</td>
+            <td>높으면 행동 순서가 빨라진다. 또한, 체술의 공격력/회피율이 높아진다.</td>
+          </tr>
+          <tr class="oddRow">
+            <td>INT<br>
+              지력 (知力)</td>
+            <td>높으면 술법의 공격력이나 습득율/상태 이상 등의 성공률이 높아진다.<br>
+              <u>메카는 INT를 높이면 프로그램의 장비 슬롯이 증가한다.</u></td>
+          </tr>
+          <tr class="evenRow">
+            <td>WIL<br>
+              집중력 (集中力)</td>
+            <td>높으면 술법이나 총/중화기의 공격력이 높아진다.</td>
+          </tr>
+          <tr class="oddRow">
+            <td>PSY<br>
+              영감 (霊感)</td>
+            <td>높으면 술법의 공격력이 증가<br>
+              적의 '상태 이상' 공격의 발생율을 저하</td>
+          </tr>
+          <tr class="evenRow">
+            <td>VIT<br>
+              견고함 (丈夫さ)</td>
+            <td>높으면 방어력이 증가한다.</td>
+          </tr>
+          <tr class="oddRow">
+            <td>CHA<br>
+              매력 (魅力)</td>
+            <td>높으면 유혹계의 공격 성공율이 높아진다.<br>
+              적의 유혹계 공격을 회피하기 쉬워진다.</td>
+          </tr>
+          <tr class="evenRow">
+            <td>DEF<br>
+              방어력 (防御力)</td>
+            <td>장비한 방어구의 총합. 적의 공격 속성에 따라서 방어력 수치가 영향이 없는 경우가 있다.</td>
+          </tr>
+          <tr class="oddRow">
+            <td>WEA<br>
+              무기 공격력</td>
+            <td>사용하는 무기의 공격력</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <h4><a class="mozTocH4" id="mozTocId821124"></a>중량</h4>
+      숨겨진 파라미터로 중량이 설정되어 있다. 아래의 표에 설명한 내용 이외에 중량치가 사용되는 특정 기술이 있지만, 실효성이 거의 없으므로 생략한다.<br>
+      <blockquote> 참고로 중량의 합계 최대치는 99이며, 중량이 높아도 행동 순서에는 영향이 없다.</blockquote>
+      <br>
+      <table class="twtable">
+        <tbody>
+          <tr class="evenRow">
+            <th align="center">중량</th>
+            <th align="center">설명</th>
+            <th align="center">영향</th>
+          </tr>
+          <tr class="oddRow">
+            <td>무기 중량</td>
+            <td>사용하는 무기의 중량</td>
+            <td>검 기술의 데미지에 영향을 줌 (영향력 小)</td>
+          </tr>
+          <tr class="evenRow">
+            <td>장비 중량</td>
+            <td>동료가 장비한 아이템에 대한 중량의 총합</td>
+            <td>적이 사용하는 '던지기 기술'의 위력과 성공율에 영향 (아군이 방어측)</td>
+          </tr>
+          <tr class="oddRow">
+            <td>몬스터 중량</td>
+            <td>적 몬스터에 설정된 중량</td>
+            <td>아군이 사용하는 '던지기 기술'의 위력과 성공율에 영향 (아군이 공격측)</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <h3><a class="mozTocH3" id="mozTocId99945"></a>장비품</h3>
+      <h4><a class="mozTocH4" id="mozTocId580979"></a>무기</h4>
+      <ul>
+        <li> 종족에 따라 장비할 수 있는 무기가 다르다.</li>
+        <li> 한손 무기는 방패와 동시에 장비 가능</li>
+        <li> 양손 무기는 방패를 가지고 있어도 회피 효과가 전혀 발동하지 않는다.</li>
+      </ul>
+      <br>
+      <table class="twtable">
+        <tbody>
+          <tr class="evenRow">
+            <th align="center">무기(K)</th>
+            <th align="center">무기(J)</th>
+            <th align="center">타입</th>
+            <th align="center">설명</th>
+          </tr>
+          <tr class="oddRow">
+            <td>검</td>
+            <td>剣</td>
+            <td>한손(片手)<br>
+              양손(両手)</td>
+            <td>공방 밸런스가 좋은 기술을 사용할 수 있다.</td>
+          </tr>
+          <tr class="evenRow">
+            <td>총</td>
+            <td>銃</td>
+            <td>한손</td>
+            <td>원거리 공격이 가능.<br>
+              총알을 모두 소모하면, 재장전을 한다. 이때의 행동은 딜레이 액션이 된다.</td>
+          </tr>
+          <tr class="oddRow">
+            <td>중화기</td>
+            <td>重火器</td>
+            <td>한손</td>
+            <td>실탄 타입과 광선 타입으로 구분<br>
+              총알을 모두 소모하면 전투가 끝날 때까지 사용할 수 없다.</td>
+          </tr>
+          <tr class="evenRow">
+            <td>확장 파트</td>
+            <td>拡張パーツ</td>
+            <td>한손</td>
+            <td>메카 족종만 성능을 내는 것이 가능하다.<br>
+              광역 범위의 공격이나 특수 효과를 가지는 것이 많다.</td>
+          </tr>
+          <tr class="oddRow">
+            <td>체술</td>
+            <td>体術</td>
+            <td>한손=타격(打撃)<br>
+              양손=던지기(投げ)</td>
+            <td>무기를 장비하지 않을 때 사용 가능<br>
+              캐릭터의 힘에 따라서 위력이 상승한다.</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <h4><a class="mozTocH4" id="mozTocId952723"></a>방어구</h4>
+      기본적으로 1종 1개 밖에 장비할 수 없다.<br>
+      <br>
+      <table class="twtable">
+        <tbody>
+          <tr class="evenRow">
+            <th align="center">방어구(K)</th>
+            <th align="center">방어구(J)</th>
+            <th align="center">설명</th>
+          </tr>
+          <tr class="oddRow">
+            <td>방패</td>
+            <td>盾</td>
+            <td>특정 공격을 일정 확률로 회피할 수 있다. (데미지나 특수 효과를 차단)<br>
+              종족에 따라서는 무기로서 장비를 할 수 있다.<br>
+              장비칸이 허락하는 한 개수 제한은 없다.</td>
+          </tr>
+          <tr class="evenRow">
+            <td>신체</td>
+            <td>身体</td>
+            <td>몸통 방어구. 대체로 방어력이 높다.</td>
+          </tr>
+          <tr class="oddRow">
+            <td>머리</td>
+            <td>頭</td>
+            <td>머리 방어구. 어둠(暗闇) 효과를 무효화</td>
+          </tr>
+          <tr class="evenRow">
+            <td>팔</td>
+            <td>腕</td>
+            <td>팔 방어구. 특정 종족이 장비하면 공격력을 올릴 수 있다.</td>
+          </tr>
+          <tr class="oddRow">
+            <td>다리</td>
+            <td>足</td>
+            <td>다리 방어구. 특수한 공격을 사용할 수 있는 것도 존재</td>
+          </tr>
+          <tr class="evenRow">
+            <td>전신 갑옷</td>
+            <td>全身鎧</td>
+            <td>&lt;신체/머리/팔/다리&gt;의 방어구가 한 세트. 부위별 중복하는 다른 방어구와 병용할 수 없다.</td>
+          </tr>
+          <tr class="oddRow">
+            <td>옷</td>
+            <td>服</td>
+            <td>전신 갑옷과 병용할 수 있는 방어구</td>
+          </tr>
+          <tr class="evenRow">
+            <td>액세서리</td>
+            <td>アクセサリー</td>
+            <td>다양한 효과를 낼 수 있는 방어구.<br>
+              장비칸이 허락하는 한 개수 제한은 없다.</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <h3><a class="mozTocH3" id="mozTocId505342"></a>방어 특성</h3>
+      전작 로맨싱 사가 2부터 내려온 시스템. 기본적으로 전작들과 유사하다.<br>
+      <br>
+      <h4><a class="mozTocH4" id="mozTocId447503"></a>속성 방어</h4>
+      대응하는 속성 방어이 높으면 데미지를 경감할 수 있다.<br>
+      <ul>
+        <li> 물리계 : 참격(斬), 타격(打), 돌격(突)</li>
+        <li> 마법계 : 열기(熱), 냉기(冷), 뇌격(雷), 광(光) = 에너지(エネルギー), 상태(状)</li>
+      </ul>
+      <blockquote> 속성 방어는 '몬스터'와 아군이 장비한 '방어구'에 설정되어 있다.<br>
+        '방어력 무시' 효과를 가진 기술로 공격하면 대상의 속성 방어를 0으로 데미지 계산을 한다. 다만, VIT는 무시할 수 없다.</blockquote>
+      <br>
+      <h4><a class="mozTocH4" id="mozTocId90364"></a>특수 내성</h4>
+      <table class="twtable">
+        <tbody>
+          <tr class="evenRow">
+            <th align="center">명칭</th>
+            <th align="center">방어</th>
+          </tr>
+          <tr class="oddRow">
+            <td>○○ 배리어</td>
+            <td>해당 속성 방어의 수치가 +99</td>
+          </tr>
+          <tr class="evenRow">
+            <td>던지기</td>
+            <td>상대의 중량이 무거우면 던지기 성공율이 떨어진다</td>
+          </tr>
+          <tr class="oddRow">
+            <td>물</td>
+            <td>물 속성의 내성을 가지면 무효화 가능</td>
+          </tr>
+          <tr class="evenRow">
+            <td>응시</td>
+            <td>응시 속성의 내성을 가지면 무효화 가능</td>
+          </tr>
+          <tr class="oddRow">
+            <td>음파</td>
+            <td>음파 속성의 내성을 가지면 무효화 가능</td>
+          </tr>
+          <tr class="evenRow">
+            <td>정신 공격</td>
+            <td>버서커/매료/혼란 내성</td>
+          </tr>
+          <tr class="oddRow">
+            <td>상태 변화</td>
+            <td>상태 이상 내성 (스턴 이외)</td>
+          </tr>
+          <tr class="evenRow">
+            <td>부유계</td>
+            <td>'다리 기술' 타입의 공격을 무효화</td>
+          </tr>
+          <tr class="oddRow">
+            <td>불사계</td>
+            <td>상태 이상 내성 (스턴/석화 이외)</td>
+          </tr>
+          <tr class="evenRow">
+            <td>메카계</td>
+            <td>상태 이상 내성 (스턴 이외)</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <h3><a class="mozTocH3" id="mozTocId280680"></a>스킬</h3>
+      전작(로마 사가3)과 다르게 습득한 기술을 다른 캐릭터가 사용할 수 없다. (기술 공유 불가능)<br>
+      <br>
+      <h4><a class="mozTocH4" id="mozTocId413305"></a>기술</h4>
+      技<br>
+      <br>
+      <ul>
+        <li> 기술은 &lt;체술/검 기술/총 기술/히어로 기술/간파&gt;가 있다.</li>
+        <li> 기술은 '휴먼'과 '히어로'만 사용할 수 있다.</li>
+        <li> WP를 소비하며, 총 기술의 경우 총알도 소비한다.</li>
+        <li> &lt;체술/검/히어로&gt; 기술은 전투 중에 사용했을 때 <strong>번뜩임</strong>(전구 아이콘)이 발동하여 새로운 기술을 습득할 수 있다.
+          <ul>
+            <li> 특정 기술을 사용하고 있으면, 특정 기술의 번뜩임을 발동시킬 수 있다. (파생)</li>
+          </ul>
+        </li>
+        <li> 총 기술은 전투 중에 총을 사용하면, 전투 종료 후에 새로운 기술을 습득한다.</li>
+        <li> 습득한 기술은 '전투' 이외의 상태일 때, 메뉴 화면의 장비기술에서 변경을 할 수 있다.
+          <ul>
+            <li> 기술을 6개 이상 장비하고, 술법을 1개도 장비하고 있지 않는 경우 &lt;기술의 달인&gt;이 되어서 소비 WP가 1 감소하는 효과가 있다. 추가로 번뜩임 확률이 2배가 된다.</li>
+          </ul>
+        </li>
+      </ul>
+      <br>
+      <h4><a class="mozTocH4" id="mozTocId722626"></a>술법</h4>
+      術<br>
+      <br>
+      <ul>
+        <li> 술법은 '휴먼'과 '요마'만 사용할 수 있다.</li>
+        <li> 사용 시, JP를 소비한다.</li>
+        <li> 술법은 전부 12계통이 있다.
+          <ul>
+            <li> 각 술법에는 상반되는 계통이 존재한다. 양립할 수 있는 것은 일부 예외를 제외하면 불가능하다.</li>
+          </ul>
+        </li>
+        <li> 술법을 습득하는 기본적인 방법은 &lt;술법 가게&gt;에서 구입하면, 습득할 수 있다.</li>
+        <li> 술법에는 <strong>자질</strong>(資質)이라는 개념이 존재한다.
+          <ul>
+            <li> 자질을 습득하면, &lt;장비기술&gt;의 술법 목록에 별표가 붙는다.</li>
+            <li> 상반된 계통의 술법 자질과 양립할 수 없다. 또한, 한 번 습득하면 취소/봉인 불가능</li>
+            <li> 전투 중 자질을 가진 계통의 술법을 사용하면, 전투 종료 후 같은 계통의 새로운 술법을 습득할 수 있다.</li>
+            <li> 자질의 습득은 관련 이벤트를 클리어하는 것으로 새롭게 얻을 수 있다.</li>
+          </ul>
+        </li>
+        <li> 습득한 술법은 '전투' 이외의 상태일 때, 메뉴 화면의 장비기술에서 변경을 할 수 있다.
+          <ul>
+            <li> 술법을 6개 이상 장비하고, 기술을 1개도 장비하고 있지 않는 경우 &lt;술법의 달인&gt;이 되어서 소비 JP가 1 감소하는 효과가 있다.</li>
+          </ul>
+        </li>
+      </ul>
+      <br>
+      <table class="twtable">
+        <caption align="top"> <strong>술법의 계통</strong> </caption>
+        <tbody>
+          <tr class="evenRow">
+            <th align="center">계통(K)</th>
+            <th align="center">계통(J)</th>
+            <th align="center">계통(K)</th>
+            <th align="center">계통(J)</th>
+          </tr>
+          <tr class="oddRow">
+            <td><span class="marked">양술</span></td>
+            <td>陽術</td>
+            <td><span class="marked">음술</span></td>
+            <td>陰術</td>
+          </tr>
+          <tr class="evenRow">
+            <td><span class="marked">비술</span></td>
+            <td>秘術</td>
+            <td><span class="marked">인술</span></td>
+            <td>印術</td>
+          </tr>
+          <tr class="oddRow">
+            <td>공술</td>
+            <td>空術</td>
+            <td>시술</td>
+            <td>時術</td>
+          </tr>
+          <tr class="evenRow">
+            <td><span class="marked">심술</span></td>
+            <td>心術</td>
+            <td>사술</td>
+            <td>邪術</td>
+          </tr>
+          <tr class="oddRow">
+            <td>마술</td>
+            <td>魔術</td>
+            <td>요술</td>
+            <td>妖術</td>
+          </tr>
+          <tr class="evenRow">
+            <td>환술</td>
+            <td>幻術</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+          </tr>
+          <tr class="oddRow">
+            <td>명술</td>
+            <td>命術</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+          </tr>
+        </tbody>
+      </table>
+      ※ 서브 이벤트로 자질을 획득할 수 있는 술법에는 <span class="marked">강조</span> 표시<br>
+      ※ 사술, 환술, 명술은 술법을 파는 술법 상점이 없다.<br>
+      ※ 공술, 시술은 판매자가 동료가 돼버리면, 술법을 구입할 수 없게 된다. 대신, 들어오는 동료가 자질을 가지고 있다.<br>
+      ※ &lt;공술/시술/명술&gt;의 자질은 블루편의 메인 이벤트 한정으로만 새롭게 습득이 가능하다.<br>
+      ※ 특정 동료는 초기 상태에서 술법의 자질을 가지고 있다. 자세한 내용은 <a href="133.html">술법의 자질 보유 캐릭터</a> 항목을 참조<br>
+      <br>
+      <h4><a class="mozTocH4" id="mozTocId259593"></a>간파</h4>
+      見切り<br>
+      <br>
+      <ul>
+        <li> 전투 중에 특정 공격을 받으면, <strong>간파</strong>를 번뜩이는 일이 있다. (휴먼 한정)</li>
+        <li> 습득한 간파를 장비하면, 해당 공격을 100% 회피한다.</li>
+        <li> 이하의 상태일 때는 간파를 번뜩일 수 없다.
+          <ul>
+            <li> &lt;장비기술&gt;에 여유 공간이 없을 경우</li>
+            <li> '상태 이상'에 걸렸을 때</li>
+            <li> 방패나 카운터로 차단한 경우</li>
+            <li> 방어구에 해당 공격의 내성을 가진 경우</li>
+          </ul>
+        </li>
+      </ul>
+      <br>
+      <h4><a class="mozTocH4" id="mozTocId945257"></a>번뜩임</h4>
+      전투에서 새로운 기술을 습득할 때 캐릭터의 머리 위에 전구가 나타난다. (휴먼 한정)<br>
+      <blockquote> 번뜩임 판정 타이밍은 커맨드를 입력하고, 전투 명령이 행해질 때 판정에 의해서 번뜩일지 결정된다.</blockquote>
+      <br>
+      <strong>번뜩임 발생률의 요소</strong><br>
+      <ul>
+        <li> 공격 대상의 '번뜩임 레벨'이 높을수록 번뜩이기 쉬워진다.
+          <ul>
+            <li> 통상적으로 고랭크의 적이면 확률이 높다.</li>
+            <li> 전체 공격의 경우 리더 몬스터를 기준으로 판정된다.</li>
+          </ul>
+        </li>
+        <li> 사용하는 기술에 따라 '번뜩임 난이도'가 정해진다. <a href="119.html">휴먼 기술 - 번뜩임</a>을 참고</li>
+        <li> 캐릭터마다 기술을 번뜩일 확률이 다르다. <a href="132.html">번뜩임 적성표</a><a tiddlylink="번뜩임/번뜩임 적성표"
+            refresh="link" class="tiddlyLink tiddlyLinkExisting" title="번뜩임/번뜩임 적성표 - 익명, 2013. 2. 7. 오전 12:53:00"
+            href="javascript:;"></a>를 참고</li>
+        <li> '기술의 달인'을 가지고 있으면, 번뜩이기 쉬워진다. (확률이 2배로 증가)</li>
+        <li> &lt;장비기술&gt;란에 빈 곳이 없으면 번뜩이지 않는다. 번뜩이기 위해서 반드시 1칸 이상 비워둔다.</li>
+      </ul>
+      <br>
+      <h3><a class="mozTocH3" id="mozTocId357775"></a>종족</h3>
+      <ul>
+        <li> &lt;휴먼/요마/몬스터/메카&gt; 4종의 종족으로 구분한다.</li>
+        <li> 종족에 따라서 습득할 수 있는 기술이나 장비할 수 있는 아이템이 달라진다.</li>
+        <li> 종족에 따라서 성장 방법이 완전히 다르기 때문에 파티 멤버가 어느 종족인지 파악해 둘 필요가 있다.</li>
+      </ul>
+      <br>
+      <table class="twtable">
+        <tbody>
+          <tr class="evenRow">
+            <th align="center">종족</th>
+            <th align="center">주된 능력치 성장 방법</th>
+          </tr>
+          <tr class="oddRow">
+            <td>휴먼</td>
+            <td>전투를 반복한다</td>
+          </tr>
+          <tr class="evenRow">
+            <td>요마</td>
+            <td>빙의 능력으로 몬스터를 흡수</td>
+          </tr>
+          <tr class="oddRow">
+            <td>몬스터</td>
+            <td>몬스터로 변신</td>
+          </tr>
+          <tr class="evenRow">
+            <td>메카</td>
+            <td>각종 아이템을 장비</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <h4><a class="mozTocH4" id="mozTocId852736"></a>휴먼족</h4>
+      <strong>휴먼</strong> (ヒューマン)<br>
+      <ul>
+        <li> 기술/술법/간파를 합계 8개까지 장비할 수 있다.</li>
+        <li> &lt;장비기술&gt;란에 빈 곳이 있으면 새로운 기술이나 간파를 배울 수 있다.</li>
+        <li> 전투를 반복하는 것으로 LP 이외의 파라미터가 상승한다.
+          <ul>
+            <li> <strong>리더 몬스터</strong>의 '성장 레벨'이 높을수록 능력치가 상승하기 쉬워진다.</li>
+            <li> 캐릭터마다 있는 '성장 자질'에 따라 쉽게 상승하는 능력치가 다르다. <a tiddlylink="성장 자질 데이터"
+                refresh="link" class="tiddlyLink tiddlyLinkExisting" href="131.html">성장 자질 데이터</a>를 참고</li>
+            <li> 캐릭터의 능력치가 높을수록 상승 확률이 저하된다. (장비의 효과를 포함한 능력치 합계로 판정)</li>
+            <li> 전투 중 행동(검/총/체술/술법 등)에 의해서 성장하는 능력치의 경향이 달라진다.</li>
+            <li> WP/JP는 다른 상승 요소와 관계없이, 특정 능력치가 높으면 상승하기 쉬워진다. (요마도 동일)
+              <ul>
+                <li> WP : STR/QUI/VIT JP : INT/WIL/PSY</li>
+              </ul>
+            </li>
+            <li> 한계 능력치(타 종족도 동일) : 능력치(STR~CHA)는 99, HP는 999, WP와 JP는 250</li>
+          </ul>
+        </li>
+      </ul>
+      <br>
+      <strong>히어로</strong> (ヒーロー)<br>
+      <ul>
+        <li> 특정 동료 캐릭터는 히어로로 변신할 수 있다.</li>
+        <li> 통상은 휴먼과 동일하지만, 전투 중 특정 조건을 만족하면 변신하여 능력이 강화, '히어로 기술'이라는 강력한 기술을 번뜩여서 사용하는 것이 가능하다.</li>
+        <li> 단점으로는 해당 전투에서는 일절 성장하지 않고, 전투 종료 후 기술이나 술법을 습득하지 못 한다.</li>
+      </ul>
+      <br>
+      <h4><a class="mozTocH4" id="mozTocId179524"></a>요마족</h4>
+      <strong>요마</strong> (妖魔)<br>
+      <ul>
+        <li> 요마는 휴먼과 몬스터의 중간 형태라고 정의할 수 있다.</li>
+        <li> 요마는 술법과 <strong>빙의 능력</strong>을 배울 수 있다.</li>
+        <li> 전투로 상승하는 능력치는 &lt;HP/WP/JP/CHA&gt;만 상승한다. 다른 능력치는 '빙의 능력'을 사용해야 한다.
+          <ul>
+            <li> WP는 '빙의 능력'을 아무리 많이 사용해도 상승하지 않는다. 오로지 &lt;펀치/검/총&gt;에 의한 공격만으로 성장한다.</li>
+          </ul>
+        </li>
+        <li> 술법은 휴먼과 거의 같지만, 4개까지 밖에 장비할 수 없어서 '술법의 달인'은 될 수 없다.
+          <ul>
+            <li> 모든 요마는 '요술'의 자질을 예외 없이 가지고 있지만, '심술'은 일절 사용할 수 없다.</li>
+          </ul>
+        </li>
+        <li> 모든 요마는 하급과 상급의 계급이 있다. 전투에서 동료의 상급 요마는 적의 하급 요마에게 받는 데미지를 경감(1/4)할 수 있다.</li>
+      </ul>
+      <br>
+      <strong>반요</strong> (半妖)<br>
+      <ul>
+        <li> 통상은 휴먼과 동일하지만, 전투 중 '요마 무구'를 사용하면 <u>일시적으로 요마가 된다.</u> (요마화)</li>
+        <li> '요마화'한 전투 한정으로 전투로 성장하는 능력치는 통상의 요마와 동일한 방식이 된다.</li>
+        <li> 요마는 '요마 무구'의 착탈이 불가능하지만, 반요는 착탈이 가능하다.
+          <ul>
+            <li> '요마 무구'를 제외하면 능력(기술)을 사용할 수 없지만, 빙의로 인한 능력치 상승 효과는 남는다.</li>
+          </ul>
+        </li>
+      </ul>
+      <br>
+      <strong>요마 무구</strong> (妖魔武具)<br>
+      <ul>
+        <li> 요마 무구는 '요마'와 '반요'만 사용할 수 있다.</li>
+        <li> 설정상 '무기'이지만 실제는 기술에 가깝다. 요마 무구는 &lt;장비기술&gt;란에서 세트할 수 있다. </li>
+        <li> 무구의 기술을 사용할 때는 WP를 소비한다.</li>
+        <li> 무구는 &lt;검/팔/다리&gt; 3종류가 있으며, 처음부터 모두를 사용할 수 없는 요마도 HP와 STR~CHA 능력치를 상승시키면, 3종을 전부 사용할 수 있다. (아래는 습득 조건)
+          <ul>
+            <li> 요마의 검 : HP 100 이상, 능력 합계가 101 이상</li>
+            <li> 요마의 팔 : HP 200 이상, 능력 합계가 151 이상</li>
+            <li> 요마의 다리 : HP 300 이상, 능력 합계가 201 이상</li>
+          </ul>
+        </li>
+      </ul>
+      <br>
+      <strong>빙의 능력</strong> (憑依能力)<br>
+      <ul>
+        <li> '요마 무구'를 사용하여 적 몬스터를 직접 쓰러뜨리면, 대응하는 무구에 몬스터를 '빙의' 시킬 수 있다. (흡수의 개념에 가깝다)</li>
+        <li> 1개의 '요마 무구'에 빙의시킬 수 있는 몬스터는 1마리만 가능하다.
+          <ul>
+            <li> 빙의한 몬스터에 따라서 요마의 능력치를 큰 폭으로 상승시킬 수 있다.</li>
+            <li> 빙의한 몬스터에 따라서 사용할 수 있는 '빙의 능력'(기술)이 다르다.</li>
+          </ul>
+        </li>
+      </ul>
+      <blockquote> 예 : 유니콘을 '요마의 검'에 빙의시키면, &lt;QUI/INT/WIL&gt;이 18씩 상승, 빙의 능력 '매지컬 힐'을 사용할 수 있게 된다.</blockquote>
+      <br>
+      <h4><a class="mozTocH4" id="mozTocId252411"></a>몬스터족</h4>
+      <strong>몬스터</strong> (モンスター)<br>
+      <ul>
+        <li> 전투에서 쓰러뜨린 적 몬스터로부터 <strong>몬스터 능력(기술)</strong>을 흡수하고, <u>흡수한 능력을 편성하는 방법</u>에 따라서 대응한 <strong>몬스터로 변신</strong>을 할 수 있다.</li>
+        <li> 장비품은 액세서리를 4개까지 장비할 수 있을 뿐이지만, 변신한 몬스터에 따라서 방어력이 설정된다.</li>
+        <li> 몬스터는 새롭게 술법을 배울 수 없다. (기존에 습득하고 있었던 동료 몬스터는 그대로 사용 가능)</li>
+      </ul>
+      <blockquote> 몬스터 종족은 변신에 따라서 성능차가 심하기 때문에 숙련자가 아니라면, 그냥 사용하지 않는 것이 좋습니다.</blockquote>
+      <br>
+      <strong>몬스터 능력(기술)</strong><br>
+      <ul>
+        <li> 몬스터 전용의 기술. 사용할 때는 WP를 소비한다.</li>
+        <li> 아군 몬스터 동료가 파티에 있는 상태로 몬스터(요마 포함) 종족의 적을 쓰러뜨리고 전투를 끝내면, 해당 적의 몬스터 능력(기술)을 흡수할지 선택할 수 있다. (이후 '몬스터 능력(기술)'은 MS로 표기함)
+          <ul>
+            <li> 흡수하면 WP를 전부 회복한다.</li>
+            <li> 흡수할 수 있는 MS는 적 몬스터에 따라 다르다.</li>
+            <li> 지금까지 흡수한 경험이 없던 MS를 새롭게 흡수한 경우, <u>최대 HP가 상승한다.</u></li>
+            <li> 하나의 몬스터는 최대 4개의 MS를 가지고 있으며, 이 중 1개를 랜덤으로 흡수할 수 있다.</li>
+            <li> 흡수한 MS는 &lt;장비기술&gt;에서 가장 아래 칸(8번째)에 배치되며, 붉은 색으로 표시된다.
+              <ul>
+                <li> &lt;장비기술&gt;에서 흡수한 MS를 다른 칸으로 이동시키면, MS를 소지(보존)할 수 있게 된다.</li>
+                <li> 필요없는 MS는 8번째 칸에 배치시키면, 다음 흡수 때 새로운 MS로 덮어쓰기를 할 수 있다.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <blockquote> 몬스터의 최대 HP 계산식 : 최대 HP = 초기설정 HP + 흡수 완료한 MS의 수 × 4</blockquote>
+      <br>
+      <strong>몬스터 변신</strong><br>
+      <ul>
+        <li> 변신 조건을 만족하고, 다음 전투에서 흡수를 실행하면 변싱을 할 수 있다.</li>
+        <li> 몬스터 변신을 하면, 해당 몬스터의 스테이터스로 변화한다. (내성과 LP 최대치도 변화)</li>
+        <li> 스테이터스 화면의 종족란을 확인하면, 현재 변신하고 있는 몬스터가 무엇인지 알 수 있다.</li>
+        <li> 몬스터 변신의 조건은 아래와 같다. 조건을 모두 만족하지 않으면 원하는 몬스터로 변신을 할 수 없다.
+          <ul>
+            <li> 조건 1 &lt;최대 HP&gt; : 최대 HP에 따라서 변신 가능한 몬스터가 정해진다.</li>
+            <li> 조건 2 &lt;필요 몬스터 능력&gt; : 변신할 몬스터는 특정 MS를 요구한다. 따라서 특정의 MS를 흡수하여 사용할 수 있는 상태가 필요하다.</li>
+            <li> 조건 3 &lt;편성 방법&gt; : 모든 MS는 6개의 부위로 기술이 분류된다. 각 부위별 MS를 &lt;장비기술&gt;에서 편성하는 방법에 따라서 대응한 몬스터로 변신이 가능하다.</li>
+          </ul>
+        </li>
+      </ul>
+      <br>
+      <dl>
+        <dt>조건 3의 상세</dt>
+        <dd> "각 부위별로 변신 조건에 해당하는 1개의 기술"만 변신 판정을 한다. 이때 우선 순위는 &lt;장비기술&gt; 화면에서 동일한 부위의 기술 중, 위쪽에 있는 것을 우선적으로 판정한다. 또한, 새롭게 흡수한 능력은 1순위로 판정된다. 이때는 &lt;장비기술&gt;에서 기술을 부위별로 재배치해야 한다.</dd>
+        <dd> 자세한 내용은 <a tiddlylink="팁/몬스터 능력을 숨기기" refresh="link" class="tiddlyLink tiddlyLinkExisting"
+            href="145.html#mozTocId65153">몬스터 능력을 숨기기</a> 항목을 참조</dd>
+      </dl>
+      <br>
+      <h4><a class="mozTocH4" id="mozTocId697242"></a>메카족</h4>
+      <strong>메카</strong> (メカ)<br>
+      <br>
+      <ul>
+        <li> 무기나 방어구 등 아이템을 장비하는 것으로 파라미터를 증가시켜 강화할 수 있다.</li>
+        <li> 메카는 다른 종족과 다르게 자유롭게 장비품을 장비를 할 수 있다.</li>
+        <li> 보디 타입(ボディタイプ)에 따라 고유 무장이나 베이스 파라미터가 변화한다.
+          <ul>
+            <li> 스테이터스 화면에서 종족란이 형식(形式)이란 항목으로 보디 타입이 표시된다.</li>
+          </ul>
+        </li>
+        <li> LP는 다른 종족보다 높게 설정되어 있지만, 비전투 시 LP 회복은 발생하지 않는다.</li>
+        <li> WP 상한이 낮은 대신에 전투에 의한 <strong>WP회복</strong>이 가능하다.</li>
+      </ul>
+      <br>
+      <strong>프로그램</strong> (プログラム)<br>
+      <ul>
+        <li> 메카 전용의 기술. WP나 총알을 소비한다.</li>
+        <li> 전투 종료 시, 메카 종족의 적 캐릭터가 있었을 경우, 아군 메카 캐릭터는 해당 적 메카에 대해 <strong>데이터 수집</strong>을 실시할 수 있다.</li>
+        <li> 데이터 수집을 실시하면, 이하 3개 중 하나의 효과가 발생하게 된다. (우선 순위는 흡수 → 개발 → 충전 순서)
+          <ul>
+            <li> 프로그램 흡수 : 적이 소지하고 있는 프로그램(기술)을 일정 확률로 흡수하여 습득한다.</li>
+            <li> 프로그램 개발 : 동료 메카 고유의 프로그램(기술)을 일정 확률로 개발하여 습득한다.</li>
+            <li> 에너지 충전 : 동료 메카의 WP가 전부 회복한다.</li>
+          </ul>
+        </li>
+        <li> WP를 소비하는 프로그램을 6개 이상 장비하고 있는 경우, <strong>프로그램의 달인</strong>이 되어 소비 WP가 1 감소한다.</li>
+        <li> 프로그램에 따라서 특정의 무기나 방어구를 장비하지 않으면 사용할 수 없는 것이 있으며, 장비하고 있는 것만으로 효과를 발동할 수 있는 것도 존재한다.</li>
+      </ul>
+      <br>
+      <strong>프로그램 흡수</strong><br>
+      적 메카에게는 흡수할 수 있는 프로그램(기술)이 최대 4개 설정되어 있다. 이 프로그램에는 우선 순위가 존재한다. 확률 판정을 차례대로 실시하여 성공하면, 프로그램 1개를 흡수하여 습득하게 된다. 흡수를 할 수 없는 경우. '프로그램 개발'을 실행하게 된다.<br>
+      <br>
+      <strong>프로그램 개발</strong><br>
+      프로그램 개발은 흡수에 실패했을 때 실행된다. 어떤 프로그램을 개발할 수 있는지는 동료 메카(수집하는 측)의 <strong>보디 타입</strong>에 따라서 다르다.<br>
+      <br>
+      <strong>보디 타입</strong> (ボディタイプ)<br>
+      보디 타입은 아군 메카 전용의 파라미터. 1부터 8까지 존재하며, 기본적으로 각 메카마다 보디 타입은 고정이지만, 메카가 주인공인 T260G편에서는 T260G 자신의 보디 타입을 임의로 변경하는 것이 가능하다. (변경 방법은 T260G편의 공략을 참조)<br>
+      <blockquote> 참고로 T260은 자신이 주인공일 때, 이름을 지정해줄 수 있는데 7자리 아래의 이름이면 뒤에 G가 붙는다. 본 공략에서는 T260과 T260G 표기를 혼용하고 있다. 따라서 플레이어가 T260G편을 진행하고 있지 않는다면, 그냥 T260으로 인식하길 바란다.</blockquote>
+      <br>
+      <table class="twtable">
+        <tbody>
+          <tr class="evenRow">
+            <th align="center">보디 타입</th>
+            <th align="center">메카 캐릭터</th>
+          </tr>
+          <tr class="oddRow">
+            <td>타입 1</td>
+            <td>T260<br>
+              T260G(초기 상태/변경 가능)</td>
+          </tr>
+          <tr class="evenRow">
+            <td>타입 2</td>
+            <td>래빗</td>
+          </tr>
+          <tr class="oddRow">
+            <td>타입 3</td>
+            <td>나카지마 영식</td>
+          </tr>
+          <tr class="evenRow">
+            <td>타입 4</td>
+            <td>BJ&amp;K</td>
+          </tr>
+          <tr class="oddRow">
+            <td>타입 5</td>
+            <td>pzkw V</td>
+          </tr>
+          <tr class="evenRow">
+            <td>타입 6</td>
+            <td>특수 공작차<br>
+              레오날드</td>
+          </tr>
+          <tr class="oddRow">
+            <td>타입 7</td>
+            <td align="center">-</td>
+          </tr>
+          <tr class="evenRow">
+            <td>타입 8</td>
+            <td align="center">-</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <strong>프로그램 개발</strong><br>
+      메카가 프로그램 흡수에 실패했을 경우, 프로그램을 개발할 수 있다.<br>
+      O 표시는 해당 <strong>보디 타입</strong>에서 개발할 수 있는 프로그램을 말한다.<br>
+      <br>
+      <table class="twtable">
+        <thead>
+          <tr class="evenRow">
+            <td>프로그램명</td>
+            <td>타입1</td>
+            <td>타입2</td>
+            <td>타입3</td>
+            <td>타입4</td>
+            <td>타입5</td>
+            <td>타입6</td>
+            <td>타입7</td>
+            <td>타입8</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="oddRow">
+            <td>사격 마스터리</td>
+            <td>O</td>
+            <td>O</td>
+            <td>O</td>
+            <td>O</td>
+            <td>O</td>
+            <td>O</td>
+            <td>O</td>
+            <td>O</td>
+          </tr>
+          <tr class="evenRow">
+            <td>검투 마스터리</td>
+            <td>O</td>
+            <td>　</td>
+            <td>O</td>
+            <td>　</td>
+            <td>　</td>
+            <td>O</td>
+            <td>O</td>
+            <td>O</td>
+          </tr>
+          <tr class="oddRow">
+            <td>맥스웰 시스템</td>
+            <td>O</td>
+            <td>O</td>
+            <td>　</td>
+            <td>O</td>
+            <td>　</td>
+            <td>　</td>
+            <td>　</td>
+            <td>　</td>
+          </tr>
+          <tr class="evenRow">
+            <td>자기수복</td>
+            <td>O</td>
+            <td>O</td>
+            <td>　</td>
+            <td>O</td>
+            <td>　</td>
+            <td>　</td>
+            <td>O</td>
+            <td>O</td>
+          </tr>
+          <tr class="oddRow">
+            <td>무반주 소나타</td>
+            <td>　</td>
+            <td>　</td>
+            <td>O</td>
+            <td>O</td>
+            <td>　</td>
+            <td>　</td>
+            <td>O</td>
+            <td>　</td>
+          </tr>
+          <tr class="evenRow">
+            <td>신위 크래쉬</td>
+            <td>　</td>
+            <td>　</td>
+            <td>O</td>
+            <td>　</td>
+            <td>　</td>
+            <td>　</td>
+            <td>　</td>
+            <td>　</td>
+          </tr>
+          <tr class="oddRow">
+            <td>다연장 시스템</td>
+            <td>　</td>
+            <td>　</td>
+            <td>O</td>
+            <td>　</td>
+            <td>O</td>
+            <td>O</td>
+            <td>O</td>
+            <td>　</td>
+          </tr>
+          <tr class="evenRow">
+            <td>깜짝 솔져</td>
+            <td>O</td>
+            <td>　</td>
+            <td>　</td>
+            <td>　</td>
+            <td>　</td>
+            <td>O</td>
+            <td>O</td>
+            <td>　</td>
+          </tr>
+          <tr class="oddRow">
+            <td>충격의 나이츠</td>
+            <td>　</td>
+            <td>　</td>
+            <td>　</td>
+            <td>　</td>
+            <td>　</td>
+            <td>O</td>
+            <td>　</td>
+            <td>　</td>
+          </tr>
+          <tr class="evenRow">
+            <td>사테라이트 링커</td>
+            <td>　</td>
+            <td>O</td>
+            <td>　</td>
+            <td>　</td>
+            <td>　</td>
+            <td>　</td>
+            <td>　</td>
+            <td>　</td>
+          </tr>
+          <tr class="oddRow">
+            <td>다단베기</td>
+            <td>O</td>
+            <td>　</td>
+            <td>O</td>
+            <td>　</td>
+            <td>　</td>
+            <td>O</td>
+            <td>O</td>
+            <td>O</td>
+          </tr>
+          <tr class="evenRow">
+            <td>카운터 ECM</td>
+            <td>　</td>
+            <td>O</td>
+            <td>　</td>
+            <td>　</td>
+            <td>　</td>
+            <td>　</td>
+            <td>　</td>
+            <td>　</td>
+          </tr>
+          <tr class="oddRow">
+            <td>마그니파이</td>
+            <td>　</td>
+            <td>O</td>
+            <td>　</td>
+            <td>O</td>
+            <td>O</td>
+            <td>　</td>
+            <td>O</td>
+            <td>O</td>
+          </tr>
+          <tr class="evenRow">
+            <td>해머 크래쉬</td>
+            <td>　</td>
+            <td>　</td>
+            <td>　</td>
+            <td>　</td>
+            <td>　</td>
+            <td>　</td>
+            <td>O</td>
+            <td>　</td>
+          </tr>
+          <tr class="oddRow">
+            <td>에너지 보급</td>
+            <td>　</td>
+            <td>　</td>
+            <td>　</td>
+            <td>　</td>
+            <td>　</td>
+            <td>O</td>
+            <td>　</td>
+            <td>　</td>
+          </tr>
+          <tr class="evenRow">
+            <td>전탄발사</td>
+            <td>　</td>
+            <td>　</td>
+            <td>O</td>
+            <td>　</td>
+            <td>O</td>
+            <td>O</td>
+            <td>O</td>
+            <td>　</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <br>
+      <table class="twtable">
+        <caption><strong>상위 메카에게서 흡수할 수 있는 프로그램</strong></caption>
+        <tbody>
+          <tr class="evenRow">
+            <th align="center">명칭(K)</th>
+            <th align="center">명칭(J)</th>
+            <th align="center">우선도 D<br>
+              (1/1)</th>
+            <th align="center">우선도 C<br>
+              (1/4)</th>
+            <th align="center">우선도 B<br>
+              (1/16)</th>
+            <th align="center">우선도 A<br>
+              (1/32)</th>
+          </tr>
+          <tr class="oddRow">
+            <td>메탈 호퍼</td>
+            <td>メタルホッパー</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td>재머</td>
+            <td>맥스웰 시스템</td>
+          </tr>
+          <tr class="evenRow">
+            <td>메카 독</td>
+            <td>メカドッグ</td>
+            <td align="center">-</td>
+            <td>발칸 회피</td>
+            <td>레이저 회피</td>
+            <td>맥스웰 시스템</td>
+          </tr>
+          <tr class="oddRow">
+            <td>전기양</td>
+            <td>電気羊</td>
+            <td align="center">-</td>
+            <td>로켓탄 회피</td>
+            <td>발칸 회피</td>
+            <td>맥스웰 시스템</td>
+          </tr>
+          <tr class="evenRow">
+            <td>T워커</td>
+            <td>Tウォーカー</td>
+            <td align="center">-</td>
+            <td>발칸 회피</td>
+            <td>로켓탄 회피</td>
+            <td>마그니파이</td>
+          </tr>
+          <tr class="oddRow">
+            <td>나이트 팔콘호</td>
+            <td>ナイトファルコン号</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+          </tr>
+          <tr class="evenRow">
+            <td>버스터 머신</td>
+            <td>バスターマシン</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td>발칸 회피</td>
+          </tr>
+          <tr class="oddRow">
+            <td>건파이터</td>
+            <td>ガンファイター</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td>발칸 회피</td>
+          </tr>
+          <tr class="evenRow">
+            <td>발칸</td>
+            <td>ヴァルカン</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td>발칸 회피</td>
+            <td>로켓탄 회피</td>
+          </tr>
+          <tr class="oddRow">
+            <td>발칸改</td>
+            <td>ヴァルカン改</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td>발칸 회피</td>
+            <td>로켓탄 회피</td>
+          </tr>
+          <tr class="evenRow">
+            <td>강철의 용병단</td>
+            <td>鋼の傭兵団</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+          </tr>
+          <tr class="oddRow">
+            <td>바이러스</td>
+            <td>ウイルス</td>
+            <td>바이러스</td>
+            <td>바이러스</td>
+            <td>바이러스</td>
+            <td>바이러스</td>
+          </tr>
+          <tr class="evenRow">
+            <td>기계신 바롤</td>
+            <td>機械神バロール</td>
+            <td>맹호 프로그램</td>
+            <td>맹호 프로그램</td>
+            <td>맹호 프로그램</td>
+            <td>맹호 프로그램</td>
+          </tr>
+          <tr class="oddRow">
+            <td>메탈 블랙</td>
+            <td>メタルブラック</td>
+            <td>맹호 프로그램</td>
+            <td>맹호 프로그램</td>
+            <td>맹호 프로그램</td>
+            <td>맹호 프로그램</td>
+          </tr>
+          <tr class="evenRow">
+            <td>메탈 블랙改</td>
+            <td>メタルブラック改</td>
+            <td>용신 프로그램</td>
+            <td>용신 프로그램</td>
+            <td>용신 프로그램</td>
+            <td>용신 프로그램</td>
+          </tr>
+          <tr class="oddRow">
+            <th align="center">명칭(K)</th>
+            <th align="center">명칭(J)</th>
+            <th align="center">우선도 D<br>
+              (1/1)</th>
+            <th align="center">우선도 C<br>
+              (1/4)</th>
+            <th align="center">우선도 B<br>
+              (1/16)</th>
+            <th align="center">우선도 A<br>
+              (1/32)</th>
+          </tr>
+          <tr class="evenRow">
+            <td>모빌 메뉴버 #1</td>
+            <td>モービルマニューバ</td>
+            <td>용신 프로그램</td>
+            <td>용신 프로그램</td>
+            <td>용신 프로그램</td>
+            <td>용신 프로그램</td>
+          </tr>
+          <tr class="oddRow">
+            <td style="background-color: RGB(198,198,198);" colspan="6">#1 옥토퍼스 보드를 떨어뜨리는 타입</td>
+          </tr>
+          <tr class="evenRow">
+            <td>모빌 메뉴버 #2</td>
+            <td>モービルマニューバ</td>
+            <td>맥스웰 시스템</td>
+            <td>맥스웰 시스템</td>
+            <td>맥스웰 시스템</td>
+            <td>최면 플래시</td>
+          </tr>
+          <tr class="oddRow">
+            <td style="background-color: RGB(198,198,198);" colspan="6">#2 상기 이외의 모빌 메뉴버</td>
+          </tr>
+          <tr class="evenRow">
+            <td>헤르메스 #3</td>
+            <td>ヘルメス</td>
+            <td>발칸 회피</td>
+            <td>로켓탄 회피</td>
+            <td>자기수복</td>
+            <td>사격 마스터리</td>
+          </tr>
+          <tr class="oddRow">
+            <td>스카이랩 #3</td>
+            <td>スカイラブ</td>
+            <td>재머</td>
+            <td>레이저 회피</td>
+            <td>자기수복</td>
+            <td>사테라이트 링커</td>
+          </tr>
+          <tr class="evenRow">
+            <td>모빌 메뉴버 #3</td>
+            <td>モービルマニューバ</td>
+            <td>용신 프로그램</td>
+            <td>맹호 프로그램</td>
+            <td>맹호 프로그램</td>
+            <td>맹호 프로그램</td>
+          </tr>
+          <tr class="oddRow">
+            <td>메카 도비 백식 #3</td>
+            <td>メカドビー百式</td>
+            <td>맥스웰 시스템</td>
+            <td>자기수복</td>
+            <td>논리 폭탄</td>
+            <td>용신 프로그램</td>
+          </tr>
+          <tr class="evenRow">
+            <td>전기양 #3</td>
+            <td>電気羊</td>
+            <td>자기수복</td>
+            <td>무반주 소나타</td>
+            <td>레이저 회피</td>
+            <td>사격 마스터리</td>
+          </tr>
+          <tr class="oddRow">
+            <td>메카 독 #3</td>
+            <td>メカドッグ</td>
+            <td>맥스웰 시스템</td>
+            <td>무반주 소나타</td>
+            <td>논리 폭탄</td>
+            <td>맹호 프로그램</td>
+          </tr>
+          <tr class="evenRow">
+            <td>메카 독 #3</td>
+            <td>メカドッグ</td>
+            <td>검투 마스터리</td>
+            <td>사격 마스터리</td>
+            <td>자기수복</td>
+            <td>용신 프로그램</td>
+          </tr>
+          <tr class="oddRow">
+            <td style="background-color: RGB(198,198,198);" colspan="6">#3 T260G편의 &lt;최종병기&gt;내에서 출현하는 적</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+    </div>
+    <!-- 하단 -->
+    <div class="footer">
+      <p>이 문서는 비영리 목적인 경우만 자유롭게 이용, 복사, 수정 및 재배포할 수 있습니다.</p>
+    </div>
+  </body>
+</html>

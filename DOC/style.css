@@ -1,0 +1,207 @@
+﻿/* 최종 수정일 : 2014년 6월 8일 */
+
+/* 기본 스타일 */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	color:#444;
+}
+
+img, p {
+	margin: 0;
+	padding: 0;
+}
+
+hr {
+	height: 1px;
+	border-width: 1px 0 0;
+	border-style: dashed none none;
+	color: #666;
+}
+
+a {text-decoration: none; font-weight: 700;}
+a:link    {color:#1A0DAB;}
+a:visited {color:#1A0DAB;}
+a:hover   {text-decoration: underline;}
+a:active  {color:red;}
+a.externalLink {color: #090;}
+
+.highlight,.marked {
+	text-decoration: none;
+	color: #FFF;
+	background-color: #333;
+	font-family: monospace;
+	margin: 0;
+	padding: 0;
+}
+
+ol {list-style-type: decimal;}
+ol ol {list-style-type: upper-alpha;}
+ol ol ol {list-style-type: upper-roman;}
+ol ol ol ol {list-style-type: decimal;}
+ol ol ol ol ol {list-style-type: upper-alpha;}
+ol ol ol ol ol ol {list-style-type: upper-roman;}
+ol ol ol ol ol ol ol {list-style-type: decimal;}
+
+/* 문서 제목 header */
+div.header {
+	display: block;
+	margin: 0;
+	padding: 0 0 1em 1em;
+	background-color: #666;
+}
+
+div.header h1 {
+	margin: 0;
+	padding: 2px 0 0 2px;
+	color: #FFF;
+}
+
+div.header h2 {
+	margin: 0;
+	padding: 2px 0 0 2px;
+	color: #FFF;
+	font-size: 1em;
+}
+
+div.header a {
+	text-decoration: none;
+}
+
+/* 본문 viewer */
+div.viewer {
+	display: block;
+	clear: both;
+	padding: 1em;
+	margin: .5em;
+}
+
+div.viewer blockquote {
+	border-left: 3px solid #666;
+	padding: 0 0 0 .5em;
+}
+
+div.viewer pre {
+	background: none repeat scroll 0% 0% #CCC;
+	padding: 0.5em;
+	font-family: monospace;
+	color: #000;
+	overflow: auto;
+}
+
+div.viewer dt {
+	border-left: 3px solid #666;
+	padding: 0 0 0 .5em;
+	font-weight: bold;
+}
+
+/* 본문 viewer heading */
+div.viewer h1, div.viewer h2 { margin: .5em 0 .5em 0; padding: 0; color: #000; }
+div.viewer h3, div.viewer h4, div.viewer h5, div.viewer h6 { margin: .5em 0 .5em 0; padding: 0; color: #000; }
+div.viewer h3 { font-size: 30px; counter-increment: section-1; counter-reset: section-2 section-3 section-4; }
+div.viewer h4 { font-size: 24px; counter-increment: section-2; counter-reset: section-3 section-4; }
+div.viewer h5 { font-size: 18px; counter-increment: section-3; counter-reset: section-4; }
+div.viewer h6 { font-size: 12px; counter-increment: section-4; }
+div.viewer h3:after  { content: "」";}
+div.viewer h4:after  { content: "」";}
+div.viewer h5:after  { content: "」";}
+div.viewer h6:after  { content: "」";}
+div.viewer h3:before { content: counter(section-1, decimal) ". 「"; }
+div.viewer h4:before { content: counter(section-1, decimal) "." counter(section-2, upper-alpha) ". 「"; }
+div.viewer h5:before { content: counter(section-1, decimal) "." counter(section-2, upper-alpha) "." counter(section-3, upper-roman) ". 「"; }
+div.viewer h6:before { content: counter(section-1, decimal) "." counter(section-2, upper-alpha) "." counter(section-3, upper-roman) "." counter(section-4, decimal) ". 「"; }
+
+/* 본문 TOC */
+#mozToc {
+	display: table;
+	border: 2px solid #666;
+	padding-top: .5em;
+	padding-right: .5em;
+	padding-bottom: .5em;
+	font-weight: 700;
+	font-family: monospace;
+}
+
+/* 본문 viewer table */
+div.viewer table {
+	border: 1px solid #000;
+	border-collapse: collapse;
+	margin: .3em 0;
+	padding: 0;
+	white-space: nowrap;
+	empty-cells: hide;
+}
+
+div.viewer th,div.viewer thead {
+	border: 1px solid #000;
+	background-color: #666;
+	color: #fff;
+	text-align: center;
+	font-weight: 700;
+	padding: .2em .3em;
+}
+
+div.viewer td {
+	border: 1px solid #000;
+	text-align: left;
+	vertical-align: middle;
+	padding: .2em .3em;
+}
+
+div.viewer tr:hover {
+	background-color: #D8D8D8;
+}
+
+/* 메뉴 index, index_list */
+div.index {
+	float: left;
+	padding: 0 0 0 1em;
+	margin: .5em;
+}
+
+div.index_list {
+	float: left;
+	text-align: left;
+	width: 240px;
+	border: 2px solid #666;
+	margin: 5px;
+	padding: 0;
+}
+
+div.index_list h3 {
+	background-color: #666;
+	color: #fff;
+	text-align: center;
+	font-size: 1.1em;
+	margin: 0;
+	padding: 3px 5px 5px;
+}
+
+div.index_list ul {
+	margin: 0;
+	padding: 0 0 0 25px;
+	line-height: 1.4em;
+}
+
+div.index_list li {
+	margin: 0;
+	background-color: #fff;
+	font-size: .8em;
+}
+
+/* 문서 하단 footer  */
+div.footer {
+	clear: both;
+	background-color: #666;
+	margin: 0;
+	padding: .2em;
+}
+
+div.footer p {
+	margin: 0;
+	padding: 0;
+	font-weight: 700;
+	color: #FFF;
+	text-indent: 1em;
+}
